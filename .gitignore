@@ -1,0 +1,137 @@
+# This file contains default .gitignore rules. To use it, copy it to .gitignore,
+# and it will cause files like your settings.php and user-uploaded files to be
+# excluded from Git version control. This is a common strategy to avoid
+# accidentally including private information in public repositories and patch
+# files.
+#
+# Because .gitignore can be specific to your site, this file has a different
+# name; updating Drupal core will not override your custom .gitignore file.
+
+# Ignore core when managing all of a project's dependencies with Composer
+# including Drupal core.
+# core
+
+# Ignore dependencies that are managed with Composer.
+# Generally you should only ignore the root vendor directory. It's important
+# that core/assets/vendor and any other vendor directories within contrib or
+# custom module, theme, etc., are not ignored unless you purposely do so.
+/vendor/
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/privatea
+
+# Ignore multi-site test environment.
+sites/simpletest
+
+# If you prefer to store your .gitignore file in the sites/ folder, comment
+# or delete the previous settings and uncomment the following ones, instead.
+
+# Ignore configuration files that may contain sensitive information.
+# */settings*.php
+
+# Ignore paths that contain user-generated content.
+# */files
+# */private
+
+# Ignore multi-site test environment.
+# simpletest
+
+# Composer
+/web/vendor/
+
+# Drupal files
+/web/sites/*/files
+/web/sites/*/private
+
+# Settings
+web/sites/*/settings.php
+/web/sites/*/files/
+/web/sites/*/files/
+
+# DDEV
+.ddev/.dbimageBuild/
+.ddev/.ddev-docker-compose-full.yaml
+
+# OS / IDE
+*.log
+
+# Env
+.env
+.env.local
+.env.development
+# Suggested by web
+# OS & editors
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Node / JS
+node_modules/
+/node_modules/
+
+# Composer (we DO NOT commit vendor directory; composer.json & composer.lock should be committed)
+vendor/
+
+# Drupal (assumes composer-managed project where core, contrib modules/themes, libraries are installed by Composer)
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/libraries/
+
+# Site-specific runtime & uploads (do NOT commit user files)
+web/sites/*/files/
+web/sites/*/private/
+web/sites/simpletest/
+web/sites/*/settings*.local.php
+
+# Sensitive local settings
+/.env
+web/sites/*/settings.local.php
+web/sites/*/settings*.local.php
+# If you keep settings.php out of repo, ignore it; otherwise keep a sanitized settings.php in repo.
+# Uncomment the next line ONLY if you want to ignore settings.php entirely:
+# web/sites/*/settings.php
+
+# Drupal dumps, caches and temporary files
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+sites/*/files/php
+sites/*/files/tmp
+
+# DDEV: commit .ddev config files but ignore local artifacts and snapshots
+.ddev/.global_config.yaml
+.ddev/.db_snapshots/
+.ddev/homeadditions/
+.ddev/.ssh/
+.ddev/*-local.yaml
+# keep .ddev/config.yaml and docker-compose.*.yaml by not ignoring everything:
+!.ddev/config.yaml
+!.ddev/docker-compose.*.yaml
+
+# Drush backup / tmp
+.drush/
+drush-backups/
+
+# Build artifacts
+/build/
+dist/
+
+# Composer lock should be committed
+!composer.lock
+
+# Git itself
+.git/
