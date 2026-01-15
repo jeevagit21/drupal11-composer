@@ -1,0 +1,25 @@
+uuid: 355a2242-9e26-4430-9243-ac782599cc4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - epost_radix
+_core:
+  default_config_hash: OQ54Y7eASt6ucwPIMXHS7ZU4DPAqsS6zg-s6XoZyrPw
+id: epost_radix_branding
+theme: epost_radix
+region: navbar_branding
+weight: -1
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

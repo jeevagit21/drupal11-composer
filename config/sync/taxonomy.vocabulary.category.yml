@@ -1,0 +1,9 @@
+uuid: ba8659f4-e076-408b-b000-fda16c79db54
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Used for categorozing content.'
+weight: 0
+new_revision: false

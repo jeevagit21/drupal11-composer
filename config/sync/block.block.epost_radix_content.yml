@@ -1,0 +1,22 @@
+uuid: 267e3260-dba3-4a0a-a146-3901636c114f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - epost_radix
+_core:
+  default_config_hash: aD9_11eXp1P8J1fWhDS8XA56bWGsnsRZGcvJTNXaSxY
+id: epost_radix_content
+theme: epost_radix
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

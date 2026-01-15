@@ -1,0 +1,20 @@
+uuid: 1286256f-8ab0-401c-8bbc-cff65a13b9f5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - epost_radix
+_core:
+  default_config_hash: S7mQI-BIFB7SE5xrJSnnMkHG-6G7xM8U8-ChxDVFT3E
+id: epost_radix_page_title
+theme: epost_radix
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 75f1fc25-ea88-43b7-ae87-dd750962b137
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - epost_radix
+_core:
+  default_config_hash: wlLDXayjzOupIWM2rBMofUKEDgMz9rHe9MfglIHwXrA
+id: epost_radix_breadcrumbs
+theme: epost_radix
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

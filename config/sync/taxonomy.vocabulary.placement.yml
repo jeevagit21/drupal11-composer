@@ -1,0 +1,9 @@
+uuid: a8a92290-6b34-4f00-a783-4b9ed752aaf3
+langcode: en
+status: true
+dependencies: {  }
+name: Placement
+vid: placement
+description: 'This section is used to Place Latest news, National, International news and epostnews Special news content.'
+weight: 0
+new_revision: false

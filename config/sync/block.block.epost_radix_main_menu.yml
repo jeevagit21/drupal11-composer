@@ -1,0 +1,27 @@
+uuid: 70c9b722-531a-4651-a69c-f887fdcd8dd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - epost_radix
+_core:
+  default_config_hash: eYKShEaJUTWMHh54Oeki9LJ8xYKElsgSJCWn2jeMn2s
+id: epost_radix_main_menu
+theme: epost_radix
+region: navbar_left
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }
