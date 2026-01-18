@@ -1,0 +1,24 @@
+uuid: cad512c5-3d53-4502-b5c1-74e2d7734228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_ep.field_image
+    - paragraphs.paragraphs_type.image_ep
+  module:
+    - media_library
+id: paragraph.image_ep.default
+targetEntityType: paragraph
+bundle: image_ep
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
