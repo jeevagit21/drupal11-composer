@@ -1,0 +1,20 @@
+uuid: cbee9f5c-90c0-4dd7-97ed-64626fec5a79
+langcode: en
+status: true
+dependencies:
+  theme:
+    - epost_radix
+_core:
+  default_config_hash: MFn9ybIyNXZd2dzID9Q7WlBQxhDpAmJFqUu5ARtH6B8
+id: epost_radix_local_actions
+theme: epost_radix
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

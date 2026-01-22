@@ -1,0 +1,20 @@
+uuid: dfc54618-0938-42c8-a9c1-cc93789b508f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - epost_radix
+id: epost_radix_poweredbydrupal
+theme: epost_radix
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

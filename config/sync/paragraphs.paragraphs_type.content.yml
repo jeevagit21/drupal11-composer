@@ -1,0 +1,10 @@
+uuid: 31fc72b8-e4d3-43f4-8cda-bc51b67dce6e
+langcode: en
+status: true
+dependencies: {  }
+id: content
+label: 'Content (ep)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

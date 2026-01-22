@@ -1,0 +1,31 @@
+uuid: af66ab59-376b-4a8f-b735-ec13d5044968
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.news.field_news_asset
+    - field.field.node.news.field_news_category
+    - field.field.node.news.field_news_content
+    - field.field.node.news.field_news_placement
+    - field.field.node.news.field_news_tags
+    - node.type.news
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.full
+targetEntityType: node
+bundle: news
+mode: full
+content: {  }
+hidden:
+  field_news_asset: true
+  field_news_category: true
+  field_news_content: true
+  field_news_placement: true
+  field_news_tags: true
+  links: true
